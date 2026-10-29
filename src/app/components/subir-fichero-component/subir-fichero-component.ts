@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
   templateUrl: './subir-fichero-component.html',
 })
 
-export class SubirFicheroComponent {}
+export class SubirFicheroComponent {
+  public fichero: File | null = null;
+  public mensaje: string = '';
+  
+  seleccionarFichero(event: Event): void {
+    let input = event.target as HTMLInputElement;
+    
+    if (input.files && input.files.length > 0) {
+      this.fichero = input.files[0];
+      this.mensaje = this.fichero.name;
+    }
+  }
+}

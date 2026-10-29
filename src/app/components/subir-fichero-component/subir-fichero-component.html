@@ -1,4 +1,8 @@
 <h1 style = "color: violet">
     Subir ficheros
 </h1>
-<p>Subir ficheros a la API</p>
+
+<!-- Creación del selector de archivos -->
+<input type="file" (change)="seleccionarFichero($event)">
+
+<p>{{mensaje}}</p>

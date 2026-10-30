@@ -40,6 +40,10 @@ export class SubirFicheroComponent {
           this.fichero!.name,
           base64
         );
+
+        this.mensaje = "¡Fichero subido correctamente!";
+        this.fichero = null;
+
       } catch (error) {
         this.mensaje = "Error al subir el fichero";
         console.log(error);

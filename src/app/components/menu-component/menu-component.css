@@ -1,0 +1,129 @@
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  padding: 12px 28px;
+  background-color: #f5c4d8 !important;
+  border-bottom: 1px solid #e9a9c2;
+}
+
+/* Nombre de la marca */
+.navbar-brand {
+  color: #80546a !important;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Enlaces */
+.navbar .nav-link {
+  padding: 10px 13px !important;
+  color: #80546a !important;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 7px;
+  transition: background-color 0.2s ease;
+}
+
+/* Enlace activo */
+.navbar .nav-link.active {
+  color: #a65378 !important;
+  font-weight: 700;
+}
+
+/* Hover */
+.navbar .nav-link:hover {
+  background-color: #edacc8;
+  color: #a65378 !important;
+}
+
+/* Menú desplegable */
+.navbar .dropdown-menu {
+  padding: 8px;
+  background-color: #fff1f6;
+  border: 1px solid #f0c5d6;
+  border-radius: 9px;
+  box-shadow: 0 4px 12px rgba(128, 84, 106, 0.10);
+}
+
+/* Opciones */
+.navbar .dropdown-item {
+  padding: 9px 12px;
+  color: #80546a;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Hover opciones */
+.navbar .dropdown-item:hover {
+  background-color: #fce0eb;
+  color: #a65378;
+}
+
+/* Separador */
+.navbar .dropdown-divider {
+  border-color: #f0c5d6;
+}
+
+/* Elementos deshabilitados */
+.navbar .nav-link.disabled {
+  color: #bd9baa !important;
+  opacity: 0.7;
+}
+
+/* Botón Search */
+.navbar .btn-outline-danger {
+  padding: 8px 18px;
+  color: #80546a !important;
+  border: 1px solid #e9a9c2 !important;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover Search */
+.navbar .btn-outline-danger:hover {
+  background-color: #edacc8 !important;
+  color: #80546a !important;
+}
+
+/* Campo Search */
+.navbar .form-control {
+  border: 1px solid #e9a9c2;
+  border-radius: 7px;
+  color: #80546a;
+  background-color: #fff1f6;
+}
+
+.navbar .form-control:focus {
+  border-color: #d477a0;
+  box-shadow: 0 0 0 3px rgba(212, 119, 160, 0.2);
+}
+
+/* Botón hamburguesa */
+.navbar .navbar-toggler {
+  border-color: #e9a9c2;
+  border-radius: 7px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(233, 169, 194, 0.3);
+}
+
+/* Adaptación a móviles */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 12px 18px;
+  }
+
+  .navbar .navbar-collapse {
+    padding: 14px 0 6px;
+  }
+
+  .navbar .btn-outline-danger {
+    margin-top: 12px;
+  }
+}

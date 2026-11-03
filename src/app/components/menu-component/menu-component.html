@@ -38,6 +38,14 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/login']">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/subordinados']">Subordinados</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="#">
                         Link
                     </a>
@@ -75,8 +83,8 @@
                     placeholder="Search"
                     aria-label="Search"/>
 
-                <button class="btn btn-outline-danger" type="submit">
-                    Search
+                <button class="btn btn-outline-danger" (click)="logOutEmpleado()">
+                    Log out
                 </button>
             </form>
 

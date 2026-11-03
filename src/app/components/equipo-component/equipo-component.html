@@ -1,0 +1,31 @@
+<h1>Equipos</h1>
+
+<div class="contenedor-equipos">
+    @for (team of equipos; track team) {
+        <div class="card tarjeta-equipo">
+
+            <img
+                [src]="team.imagen"
+                class="card-img-top imagen-equipo"
+                [alt]="team.nombre">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    {{team.nombre}}
+                </h5>
+
+                <p class="card-text">
+                    <strong>Champions:</strong>
+                    {{team.champions}}
+                </p>
+
+                <p class="card-text web-equipo">
+                    {{team.web}}
+                </p>
+
+            </div>
+        </div>
+    }
+</div>
+

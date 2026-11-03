@@ -11,15 +11,25 @@ import { InformesPdfComponent } from './components/informes-pdf-component/inform
 import { errorInterceptor } from './interceptors/error-interceptor';
 import { provideToastService } from 'ngx-yet-another-toast-library';
 import { ErrorComponent } from './components/error-component/error-component';
+import { EquipoComponent } from './components/equipo-component/equipo-component';
+import { ServiceEquipos } from './services/service.equipos';
 
 @NgModule({
-  declarations: [App, MenuComponent, ApiFilesComponent, InformesPdfComponent, ErrorComponent],
+  declarations: [
+    App,
+    MenuComponent,
+    ApiFilesComponent,
+    InformesPdfComponent,
+    ErrorComponent,
+    EquipoComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideHttpClient(withInterceptors([errorInterceptor])),
     provideToastService(),
     ServicePostFiles,
+    ServiceEquipos,
   ],
   bootstrap: [App],
 })

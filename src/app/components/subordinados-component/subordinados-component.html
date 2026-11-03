@@ -1,17 +1,24 @@
 <h1>Subordinados</h1>
-@if (empleados){
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Apellido</th>
-                <th>Oficio</th>
-                <th>Salario</th>
-                <th>Director</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (emp of empleados; track emp){
+@if (empleados) {
+
+    <div class="contenedor-tabla">
+
+        <table class="table tabla-empleados">
+
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Apellido</th>
+                    <th>Oficio</th>
+                    <th>Salario</th>
+                    <th>Director</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @for (emp of empleados; track emp) {
+
                     <tr>
                         <td>{{emp.idEmpleado}}</td>
                         <td>{{emp.apellido}}</td>
@@ -19,7 +26,13 @@
                         <td>{{emp.salario}}</td>
                         <td>{{emp.director}}</td>
                     </tr>
-            }
-        </tbody>
-    </table>
+
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
+
 }

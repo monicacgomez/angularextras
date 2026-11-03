@@ -16,7 +16,7 @@ export class ServiceEmpleados {
         let header = new HttpHeaders()
             .set("content-type", "application/json");
         return firstValueFrom(
-            this._http.post(this.url + request, json, {headers: header})
+            this._http.post(this.url + request, json,{headers: header})
         )
     }
 

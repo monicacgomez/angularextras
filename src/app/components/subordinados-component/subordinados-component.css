@@ -1,0 +1,85 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 28px;
+  font-family: Arial, sans-serif;
+  color: #80546a;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Título principal */
+h1 {
+  margin: 10px 0 28px;
+  color: #d477a0 !important;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Contenedor de la tabla */
+.contenedor-tabla {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #f0c5d6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(128, 84, 106, 0.08);
+}
+
+/* Tabla */
+.tabla-empleados {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  color: #80546a;
+  font-size: 14px;
+}
+
+/* Cabecera */
+.tabla-empleados thead th {
+  padding: 15px;
+  background-color: #f5c4d8;
+  color: #80546a;
+  border: 1px solid #e9a9c2;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Celdas */
+.tabla-empleados tbody td {
+  padding: 13px 15px;
+  background-color: #fff1f6;
+  color: #80546a;
+  border: 1px solid #f0c5d6;
+  vertical-align: middle;
+}
+
+/* Filas alternas */
+.tabla-empleados tbody tr:nth-child(even) td {
+  background-color: #fce0eb;
+}
+
+/* Hover de las filas */
+.tabla-empleados tbody tr:hover td {
+  background-color: #edacc8;
+  transition: background-color 0.2s ease;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+  :host {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .tabla-empleados {
+    font-size: 12px;
+  }
+
+  .tabla-empleados thead th,
+  .tabla-empleados tbody td {
+    padding: 10px;
+  }
+}

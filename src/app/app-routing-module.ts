@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SubirFicheroComponent } from './components/subir-fichero-component/subir-fichero-component';
+import { ApiFilesComponent } from './components/api-files-component/api-files-component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: SubirFicheroComponent
-  }
+  {path: "", component: ApiFilesComponent}
 ];
 
 @NgModule({

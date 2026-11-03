@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ServiceFicheros } from '../../services/service.ficheros';
+import { ServiceFicheros } from '../../services/service.post.files';
 
 @Component({
   selector: 'app-subir-fichero-component',
